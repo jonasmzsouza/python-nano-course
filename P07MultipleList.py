@@ -23,5 +23,20 @@ for index in range(0,len(hardwares)):
 search=input("\nEnter name of the hardware you want to search: ")
 for index in range(0,len(hardwares)):
     if search==hardwares[index]:
-        print("Price......: ", prices[index])
+        print("\nPrice......: ", prices[index])
         print("Serial.....: ", serials[index])
+
+depreciation=input("\nDo you want to depreciate this hardware by 10%?").upper()
+while depreciation != "YES" and depreciation != "NO":
+    print("Answer YES or NO to depreciate")
+    depreciation=input("Do you want to depreciate this hardware by 10%?").upper()
+
+if depreciation == "YES":
+    for index in range(0,len(hardwares)):
+        if search==hardwares[index]:
+            print("\nOld price:", prices[index])
+            prices[index] = prices[index] * 0.9
+            print("New price:", prices[index])
+else:
+    print("The price of the hardware \"" + search + "\" has not been depreciated.")
+
