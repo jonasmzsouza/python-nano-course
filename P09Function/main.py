@@ -16,7 +16,7 @@ p = int(input("Enter a number for the percentage: "))
 changeElement(myList, p)
 
 print("\nDeleting...")
-deleteElement(myList)
+print(deleteElement(myList))
 diplayInventory(myList)
 
 print("\nSumming up...")
