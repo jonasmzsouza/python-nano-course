@@ -14,8 +14,14 @@ for index in range(0,len(hardwares)):
     print("\n----------------------------------")
     print("Hardware...: ", (index+1))
     print("----------------------------------")
-    print("Description: ",hardwares[index])
+    print("Description: ", hardwares[index])
     print("Price......: ", prices[index])
     print("Serial.....: ", serials[index])
     print("Department.: ", departments[index])
     print("----------------------------------")
+
+search=input("\nEnter name of the hardware you want to search: ")
+for index in range(0,len(hardwares)):
+    if search==hardwares[index]:
+        print("Price......: ", prices[index])
+        print("Serial.....: ", serials[index])
