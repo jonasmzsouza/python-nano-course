@@ -61,3 +61,11 @@ for element in inventory:
     print("Department.: ", element[3])
     print("----------------------------------")
 
+#SUMMARY OF VALUES
+values=[]
+for element in inventory:
+    values.append(element[1])
+if len(values)>0:
+    print("\nMost expensive hadware value: ", max(values) )
+    print("Cheaper hardware value: ", min(values))
+    print("Total values: ", sum(values))
