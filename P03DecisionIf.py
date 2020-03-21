@@ -1,6 +1,6 @@
 name=input("Enter the name: ")
 age=int(input("Enter the age: "))
-priority="NO"
-if age>=65:
-    priority="YES"
-print("Does the patient " + name + " have priority care? " + priority)
+if age >= 65:
+    print("The patient " + name + " has priority care.")
+else:
+    print("The patient " + name + " hasn't priority care.")
